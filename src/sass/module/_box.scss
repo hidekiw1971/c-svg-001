@@ -1,0 +1,28 @@
+@use "global" as *;
+.box__inner {
+  width: calc(100% / 2);
+  margin: 0 auto;
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.box__inner::before {
+  content: "";
+  display: block;
+  padding-top: 120%;
+  background-image: url(/images/bg_gray.5d79ec0.svg);
+}
+
+.box__inner p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+  }
+}
